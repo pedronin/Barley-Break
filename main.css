@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(126, 126, 126);
+    overflow: hidden;
+}
+
+.btn {
+    border: none;
+    background: inherit;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.barleybreak__title {
+    margin: 0;
+    margin-top: 80px;
+    font-size: 60px;
+    text-align: center;
+}
+
+.barleybreak__desk {
+    margin:  0 auto;
+    width: 420px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.barleybreak__mix {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    padding: 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+.barleybreak__cell {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000000;
+    font-size: 50px;
+    color: #dedede;
+    border: 4px solid #dedede;
+
+    transition: all .6s ease;
+}
+
+.barleybreak__cell.end {
+    animation-name: endAnimation;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes endAnimation {
+    20% {
+        border-color: rgb(251, 104, 7);
+    }
+    80% {
+        border-color: rgb(193, 6, 255);
+    }
+    100% {
+        border-color: #dedede;
+    }
+}
+
