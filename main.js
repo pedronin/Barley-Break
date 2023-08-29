@@ -76,7 +76,7 @@ function end() {
   check(Array.from(document.getElementsByClassName('barleybreak__cell')));
 }
 
-document.querySelector('.barleybreak__mix').addEventListener('click', () => {
+document.querySelector('.barleybreak__btn-mix').addEventListener('click', () => {
   desk.innerHTML = '';
   random();
   render();
